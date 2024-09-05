@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>TuPuntaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('images/back\ 3.png'); /* Cambia 'background.jpg' por el nombre de tu imagen */
+            background-size:cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+        .social-login {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .facebook-login {
+            background-color: #3b5998;
+        }
+        .instagram-login {
+            background-color: #e4405f;
+        }
+        .social-login i {
+            margin-right: 10px;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin: 0 0 20px;
+        }
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .login-container a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .facebook-login {
+            background-color: #3b5998;
+        }
+        .instagram-login {
+            background-color: #e4405f;
+        }
+        .facebook-login:hover {
+            background-color: #2d4373;
+        }
+        .instagram-login:hover {
+            background-color: #c13584;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Inicia sesion para ver si tu examen ya fue calificado!</h2>
+        <!-- Traditional Login Form -->
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>O Inicia sesion rapido:</p>
+        <!-- Social Login Buttons -->
+       <a href="https://fd8d-191-108-180-82.ngrok-free.app" class="social-login instagram-login" target="_blank">
+            <i class="fab fa-instagram"></i> Inicia rapido con Instagram
+    </div>
+</body>
+</html>
